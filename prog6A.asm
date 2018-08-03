@@ -1,6 +1,5 @@
-TITLE Program 6A (cs271_prog6A.asm)
-; CS271-400 Program 6A (Due 03/15/15)
-; Author: Susan Kuretski (kuretsks@onid.oregonstate.edu)
+TITLE Program 6A
+; Author: skuretski
 ; Date 3/11/15
 ; Description: Write a small test program that gets 10 valid integers
 ; from the user and stores the numeric values in an array. The program
@@ -44,7 +43,7 @@ ENDM
 .data
 
 	introMsg		BYTE		"Program 6A: Designing Low-Level I/O Procedures", 0
-	authorMsg		BYTE		"Writen by Susan Kuretski", 0
+	authorMsg		BYTE		"Writen by skuretski", 0
 	instructMsg	BYTE		"Please provide 10 unsigned decimal integers.", 0dh, 0ah
 				BYTE		"Each number needs to be small enough to fit inside a 32-bit", 0dh, 0ah
 				BYTE		"register. After you have finished inputting the numbers,", 0dh, 0ah

@@ -1,6 +1,5 @@
 TITLE Program 5 (cs271_prog5.asm)
-; CS271-400 Program 5 (Due 3/1/15)
-; Author: Susan Kuretski (kuretsks@onid.oregonstate.edu)
+; Author: skuretski
 ; Date 2/22/15
 ; Description: Write a program to perform the following tasks:
 ;   1. Introduce the program
@@ -11,7 +10,7 @@ TITLE Program 5 (cs271_prog5.asm)
 ;   5. Sort the list in descending order.
 ;   6. Calculate and display the median value, rounded to the nearest int.
 ;   7. Display the sorted list. 10 per line. 
-;   EXTRA CREDIT: Median (for an even sized array) is a float number
+;   8. Median (for an even sized array) is a float number
 
 INCLUDE Irvine32.inc
 
@@ -22,7 +21,7 @@ MIN_RANGE = 100
 
 .data
 	progName	BYTE		"Sorting Random Numbers by", 0
-	author	BYTE		" Susan Kuretski", 0
+	author	BYTE		"skuretski", 0
 	instruct	BYTE		"This program generates a list of random numbers in the range 100-999, ", 0dh, 0ah
 			BYTE		"displays the original list, sorts the list, and calculates the median ", 0dh, 0ah
 			BYTE		"value. Finally, it displays the list sorted in descending order.", 0

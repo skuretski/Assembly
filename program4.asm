@@ -1,6 +1,5 @@
-TITLE Program 4 (cs271_program4.asm)
-; CS271-400 Program 4 (Due 2/15/15)
-; Author: Susan Kuretski (kuretsks@onid.oregonstate.edu)
+TITLE Program 4 
+; Author: skuretski
 ; Date: 2/10/15
 ; Description: Write a program that calculates prime numbers. 
 ;	The user is intstructed to enter the number of primes to 
@@ -12,7 +11,6 @@ TITLE Program 4 (cs271_program4.asm)
 ;	numbers up to and including the nth prime. The results should be
 ;	displayed 10 primes per line with at least 3 spaces between the 
 ;	numbers.
-; EXTRA CREDIT POTENTIAL:
 ;	1. Procedure using parameters
 ;	2. Local variables used
 ;	3. Columns aligned
@@ -23,12 +21,12 @@ MAX_NUM = 200
 
 .data
 	progName	BYTE		"Prime Numbers by ", 0
-	author	BYTE		"Susan Kuretski", 0
+	author		BYTE		"skuretski", 0
 	instruct	BYTE		"Enter the number of prime numbers you would like to see.", 0dh, 0ah
-			BYTE		"I'll accept up to 200 primes.", 0
-	userNum	DWORD	?
+						BYTE		"I'll accept up to 200 primes.", 0
+	userNum		DWORD		?
 	farewell	BYTE		"Program ending. Cheers from ", 0
-	error	BYTE		"Number must be 1-200. Try again.", 0
+	error			BYTE		"Number must be 1-200. Try again.", 0
 
 .code
    main PROC
